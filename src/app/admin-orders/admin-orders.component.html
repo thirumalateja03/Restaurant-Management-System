@@ -1,0 +1,55 @@
+<!-- <html>
+
+<body>
+    <div class="admin-orders-container">
+        <div class="table" *ngIf="tableArray.t1Orders.length === 0">
+            <div class="table-container" *ngFor="let order of tableArray.t1Orders" style="margin-bottom: 20px;">
+                <strong>Item Name:</strong> {{ order.itemName }}<br>
+                <strong>Item Type:</strong> {{ order.itemType }}<br>
+                <strong>Item Price:</strong> ₹{{ order.itemPrice }}<br>
+                <strong>Item Size:</strong> {{ order.itemsize }}<br>
+                <strong>Item Quantity:</strong> {{ order.itemquantity }}<br>
+                <strong>Tapioca Status:</strong> {{ order.tapiocastatus }}<br>
+                <strong>Poppins:</strong> {{ order.poppins[0]?.name }}<br>
+                <div *ngIf="order.note !== ''"><strong>Note:</strong> {{ order.note }}<br></div>
+                <div *ngIf="order.tropicaltype !== 'none'">
+                    <strong>Tropical Type:</strong> {{ order.tropicaltype }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!-- <div *ngFor="let orderType of orderTypes">
+    <h2>{{ orderType.label }}</h2>
+    <table class="order-table">
+        <tr *ngFor="let order of orders[orderType.key]">
+            <td>
+                <div class="order-box">
+                    <p><strong>Order ID:</strong> {{ order._id }}</p>
+                    <p><strong>Item ID:</strong> {{ order.itemdid }}</p>
+                    <p><strong>Price:</strong> {{ order.itemPrice }}</p>
+                    <p><strong>Size:</strong> {{ order.itemsize }}</p>
+                    <p><strong>Quantity:</strong> {{ order.itemquantity }}</p>
+                    <p><strong>Tapioca Status:</strong> {{ order.tapiocastatus }}</p>
+
+                    <strong>Poppins:</strong>
+                    <ul>
+                        <li *ngFor="let poppin of order.poppins">{{ poppin.name }}</li>
+                    </ul>
+
+                    <p><strong>Note:</strong> {{ order.note }}</p>
+                    <p><strong>Tropical Type:</strong> {{ order.tropicaltype }}</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div> -->
+
+<div class="orders-main-container">
+    <div class="tables-slices" *ngFor="let order of orders">
+        
+    </div>
+</div>

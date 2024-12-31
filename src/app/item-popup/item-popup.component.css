@@ -1,0 +1,42 @@
+.container {
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.size {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.size.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.poppin-item {
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.poppin-item.selected {
+    border: solid blueviolet;
+}

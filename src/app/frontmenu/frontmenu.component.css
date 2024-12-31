@@ -1,0 +1,103 @@
+.navbar {
+    position: fixed;
+    margin-top: 10px;
+    z-index: 2;
+    height: 72px;
+    width: 100%;
+    padding-inline: 30px;
+    color: white;
+}
+
+.navbar .nav-list {
+    list-style-type: none;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar .nav-list li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.home-content {
+    width: 100%;
+    position: absolute;
+    background-color: aliceblue;
+    top: 100%;
+}
+
+.boba-history-container {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    padding-inline: 10%;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-heading {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.container-content {
+    text-align: left;
+    font-size: 16px;
+}
+
+.specials-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-block: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-container {
+    min-height: 98vh;
+    max-height: auto;
+    width: 100%;
+}
+
+.menu-items {
+    min-height: 98vh;
+    max-height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    height: 300px;
+    width: 290px;
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selected {
+    border: solid blueviolet;
+}

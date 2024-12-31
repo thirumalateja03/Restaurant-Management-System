@@ -1,0 +1,22 @@
+.slideshow {
+    position: relative;
+    width: 100% ;
+    /* Adjust as needed */
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    /* Display 1 image at a time */
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

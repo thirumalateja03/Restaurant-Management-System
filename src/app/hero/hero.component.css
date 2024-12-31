@@ -1,0 +1,49 @@
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-container video {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.content .heading {
+    font-size: 10vh;
+    line-height: 1;
+}
+
+.content .hero-content {
+    margin-top: 8vh;
+    height: fit-content;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.caption {
+    margin-top: 30px ;
+}

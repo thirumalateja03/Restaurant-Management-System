@@ -1,0 +1,22 @@
+<div class="admin-top-container">
+    <div class="admin-container">
+        <h1>Admin Portal</h1>
+        <div class="chart-container">
+            <app-pie-char></app-pie-char>
+        </div>
+    </div>
+    <div class="admin-right-container">
+        <div class="admin-ml-data">
+            <h1>Litre Sold : <span>{{(ml350*300 + ml500*500)/1000}}</span>Lit</h1>
+            <h1>No.of 350ml sold : <span>{{ml350}}</span>cans</h1>
+            <h1>No.of 500ml sold : <span>{{ml500}}</span>cans</h1>
+        </div>
+        <div class="ml-container">
+            <div class="ml-level-container" [style.height.px]="height"></div>
+        </div>
+    </div>
+</div>
+
+<div class="admin-content">
+    
+</div>

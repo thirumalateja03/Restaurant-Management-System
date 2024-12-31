@@ -1,0 +1,226 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<div class="home-container">
+    <nav class="navbar">
+        <div class="nav-left">
+            <h3 style="font-size: 22px;">BOBA BLACK PEARL</h3>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-list">
+                <li><a routerLink="/home">HOME</a></li>
+                <li><a routerLink="/mainmenu">Menu</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <app-menuhero></app-menuhero>
+
+
+    <div class="home-content" align="center">
+        <div class="boba-specials-container">
+            <div class="specials-container" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/5644353/pexels-photo-5644353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+                <div class="spl-left" style="margin-bottom: 70px; border-bottom: 2px white solid; padding: 20px;">
+                    <p class="container-heading">Boba Bursting</p>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu-items" style="color: black;">
+                        <div *ngFor="let menuItem of set1; let i = index;" class="menu-item"
+                            [class.selected]="menuItem.selected">
+                            <div class="item-name">{{ menuItem.name }}</div>
+                            <div class="item-description">{{ menuItem.description }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specials-container" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2564116/pexels-photo-2564116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+                <div class="spl-left" style="margin-bottom: 70px; border-bottom: 2px white solid; padding: 20px;">
+                    <p class="container-heading">Classic Milk tea</p>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu-items" style="color: black;">
+                        <div *ngFor="let menuItem of set2; let i = index;" class="menu-item"
+                            [class.selected]="menuItem.selected">
+                            <div class="item-name">{{ menuItem.name }}</div>
+                            <div class="item-description">{{ menuItem.description }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specials-container" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/3119221/pexels-photo-3119221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+                <div class="spl-left" style="margin-bottom: 70px; border-bottom: 2px white solid; padding: 20px;">
+                    <p class="container-heading">Tropical Delight Tea</p>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu-items" style="color: black;">
+                        <div *ngFor="let menuItem of set3; let i = index;" class="menu-item"
+                            [class.selected]="menuItem.selected">
+                            <div class="item-name">{{ menuItem.name }}</div>
+                            <div class="item-description">{{ menuItem.description }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="specials-container" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/12173178/pexels-photo-12173178.jpeg?auto=compress&cs=tinysrgb&w=600'); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+                <div class="spl-left" style="margin-bottom: 70px; border-bottom: 2px white solid; padding: 20px;">
+                    <p class="container-heading">Fruit Milk Tea</p>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu-items" style="color: black;">
+                        <div *ngFor="let menuItem of set4; let i = index;" class="menu-item"
+                            [class.selected]="menuItem.selected">
+                            <div class="item-name">{{ menuItem.name }}</div>
+                            <div class="item-description">{{ menuItem.description }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specials-container" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/6413383/pexels-photo-6413383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+                <div class="spl-left" style="margin-bottom: 70px; border-bottom: 2px white solid; padding: 20px;">
+                    <p class="container-heading">Boba Ice cream</p>
+                </div>
+
+                <div class="menu-container">
+                    <div class="menu-items" style="color: black;">
+                        <div *ngFor="let menuItem of set5; let i = index;" class="menu-item"
+                            [class.selected]="menuItem.selected">
+                            <div class="item-name">{{ menuItem.name }}</div>
+                            <div class="item-description">{{ menuItem.description }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+                style="background-image: url('https://images.pexels.com/photos/6413445/pexels-photo-6413445.jpeg?auto=compress&cs=tinysrgb&w=600'); color: white; background-repeat: no-repeat; background-size: cover;">
+
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>BOBA Black Pearl
+                            </h6>
+                            <p>
+                                Our bubble teas are not just drinks; they're experiences crafted to delight your senses
+                                and transport
+                                you to a realm of flavors like never before.
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Specials
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Boba brusting</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Tropical delight</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">fruit tea</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Boba Ice cream</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Menu</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Location</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Contact us</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Brundavan gardens, Guntur</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                contact@bobablackpearl.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> 8775452635</p>
+                            <p><i class="fas fa-print me-3"></i> 7326237632</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Copyright:
+                <a class="text-reset fw-bold" href="">bobablackpearl.com</a>
+            </div>
+        </footer>
+    </div>
+</div>
